@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Alert, Container } from "react-bootstrap";
+import { Alert } from "react-bootstrap";
 import agent from "../../api/agent";
 
 const Login = () => {
@@ -69,9 +69,11 @@ const Login = () => {
     }
   };
   return (
-    <div className="container w-75  bg-transparent rounded">
+    
+    <div className="container bg-transparent rounded justify-content-center w-full col-sm-7 col-md-8  col-lg-5">
+      
       {resultCode == 'failed' ? (
-        <div>
+        <div className="" >
           {["danger"].map((variant) => (
             <Alert key={variant} variant={variant}>
               {resultMessage}
@@ -80,7 +82,7 @@ const Login = () => {
           ))}{" "}
         </div>
       ) : resultCode == 'success' ? (
-        <div>
+        <div className="">
           {" "}
           {["success"].map((variant) => (
             <Alert key={variant} variant={variant}>
@@ -94,9 +96,9 @@ const Login = () => {
           ))}
         </div>
       ): null}
-      <div className="card border-secondary mb-3 w-full">
+      <div className="card border-secondary mb-3  ">
        <div className="card-header text-center fs-4 fw-bold">Sign In</div>
-        <div className="card-body text-secondary">
+        <div className="card-body text-secondary justify-content-center ">
      <form>
         <div className="mb-3">
           <label>User Name</label>

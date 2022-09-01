@@ -50,10 +50,12 @@ const SignUp = () => {
 
 
     return (
-        <div className='container-fluid'>
-      {/* <form >
-      <h3><label className="d-flex justify-content-center">Sign Up</label></h3>
-        <div   className="form-group">
+      <div className="container bg-transparent rounded justify-content-center w-full col-sm-7 col-md-8  col-lg-5">
+      <div className="card border-secondary mb-3 w-full ">
+       <div className="card-header text-center fs-4 fw-bold">Sign Up</div>
+        <div className="card-body text-secondary">
+        <form >
+        <div   className="mb-3">
           <label>Email address</label>
           <input
             type="text"
@@ -63,7 +65,7 @@ const SignUp = () => {
             placeholder="Enter Email Address"
           />
         </div>
-        <div className="form-group">
+        <div className="mb-3">
           <label>Password</label>
           <input
             type="password"
@@ -71,9 +73,10 @@ const SignUp = () => {
             value={state.password}
             onChange={e => setState({...state, password: e.target.value})}
             placeholder="Enter Password"
+            
           />
         </div>
-        <div className="form-group">
+        <div className="mb-3">
           <label>First Name</label>
           <input
             type="text"
@@ -83,7 +86,7 @@ const SignUp = () => {
             placeholder="Enter First Name"
           />
         </div>
-        <div className="form-group">
+        <div className="mb-3">
           <label>Last name</label>
           <input
             type="text"
@@ -93,7 +96,7 @@ const SignUp = () => {
             placeholder="Enter Last Name"
           />
         </div>
-        <div className="form-group">
+        <div className="mb-3">
           <label>Mobile</label>
           <input
             type="text"
@@ -103,7 +106,7 @@ const SignUp = () => {
             placeholder="Enter Mobile"
           />
         </div>
-        <div className="form-group">
+        <div className="mb-3">
           <label>Country Id</label>
           <input
             type="number"
@@ -113,7 +116,7 @@ const SignUp = () => {
             placeholder="Enter Country Id"
           />
         </div>
-        <div className="form-group">
+        <div className="mb-3">
           <label>AId</label>
           <input
             type="number"
@@ -124,97 +127,18 @@ const SignUp = () => {
           />
         </div>
         <div className="d-grid">
-          <button type="submit" className="btn btn-secondary" onClick={handleSubmit}>
-            Sign Up
+        <button
+            type="submit"
+            className="btn btn-primary align-items-center w-75 mx-auto"
+            onClick={handleSubmit}
+          >
+            Submit
           </button>
-        </div>
-        
-      </form> */}
-
-      <div className="card border-secondary mb-3 w-full">
-       <div className="card-header text-center fs-4 fw-bold">Sign Up</div>
-        <div className="card-body text-secondary">
-        <form >
-        <div   className="form-group">
-          <label>Email address</label>
-          <input
-            type="text"
-            className="form-control"
-            value={state.email}
-            onChange={e => setState({...state, email: e.target.value})}
-            placeholder="Enter Email Address"
-          />
-        </div>
-        <div className="form-group">
-          <label>Password</label>
-          <input
-            type="password"
-            className="form-control"
-            value={state.password}
-            onChange={e => setState({...state, password: e.target.value})}
-            placeholder="Enter Password"
-          />
-        </div>
-        <div className="form-group">
-          <label>First Name</label>
-          <input
-            type="text"
-            className="form-control"
-            value={state.firstName}
-            onChange={e => setState({...state, firstName: e.target.value})}
-            placeholder="Enter First Name"
-          />
-        </div>
-        <div className="form-group">
-          <label>Last name</label>
-          <input
-            type="text"
-            className="form-control"
-            value={state.lastName}
-            onChange={e => setState({...state, lastName: e.target.value})}
-            placeholder="Enter Last Name"
-          />
-        </div>
-        <div className="form-group">
-          <label>Mobile</label>
-          <input
-            type="text"
-            className="form-control"
-            value={state.mobile}
-            onChange={e => setState({...state, mobile: e.target.value})}
-            placeholder="Enter Mobile"
-          />
-        </div>
-        <div className="form-group">
-          <label>Country Id</label>
-          <input
-            type="number"
-            className="form-control"
-            value={state.countryId}
-            onChange={e => setState({...state, countryId: e.target.value})}
-            placeholder="Enter Country Id"
-          />
-        </div>
-        <div className="form-group">
-          <label>AId</label>
-          <input
-            type="number"
-            className="form-control"
-            value={state.aId}
-            onChange={e => setState({...state, aId: e.target.value})}
-            placeholder="Enter AID"
-          />
-        </div>
-        <div className="d-grid mt-4 mx-auto w-75">
-          <button type="submit" className="btn btn-secondary" onClick={handleSubmit}>
-            Sign Up
-          </button>
-        </div>
-        
+          </div>
       </form>
   </div>
 </div>
-      </div>
+</div>
     )
 }
 export default SignUp;

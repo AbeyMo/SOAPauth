@@ -12,7 +12,7 @@ return (
     
         <Header></Header>
         
-          <div className="container-fluid mt-5  w-50 p-3" >
+          <div className="container mt-5 w-75 d-flex justify-content-center " >
           
             <Routes>
               <Route path="/" element={<Login />} />
